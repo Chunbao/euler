@@ -1,0 +1,54 @@
+ (def tries (distinct '(319 680 180 690 129 620 762 689 762 318
+
+                       368 710 720 710 629 168 160 689 716 731
+
+                       736 729 316 729 729 710 769 290 719 680
+
+                       318 389 162 289 162 718 729 319 790 680
+
+                       890 362 319 760 316 729 380 319 728 716)))
+
+
+
+(defn sep-num [n]
+
+  (let [[a b c] (str n)]
+
+(list (list a b) (list b c))))
+
+
+
+(def order (distinct (reduce concat (map sep-num tries))))
+
+(def a (for [[u v] order] u))
+
+(def b (for [[u v] order] v))
+
+(def last-item ((vec (clojure.set/difference (set b) (set a))) 0))
+
+
+
+(defn crack-pass [order-dict]
+
+  (loop [left a right b dict order-dict result []]
+
+    (if (empty? dict)
+
+      (reverse (cons last-item result))
+
+      (let [xs (clojure.set/difference (set left) (set right))
+
+            x ((vec xs) 0)
+
+            d (filter (fn [[lv rv]] (not= lv x)) dict)
+
+            l (for [[u v] d] u)
+
+            r (for [[u v] d] v)]
+
+        (recur l r d (cons x result))))))
+
+
+
+(crack-pass order)
+
