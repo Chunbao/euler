@@ -1,0 +1,29 @@
+For the record, I've been programming in Perl 5 for around 15 years, so I'm a bit biased. Having said that, I really like Perl. Don't listen to the naysayers, and don't think that its age is somehow an indicator of its shelf live. The best way to look at Perl is to see it in comparison to other languages:
+
+PHP - PHP is a pretty good web programming language; don't get me wrong. But, it's only a web programming language. Even web applications need their cronjobs to do clean up processes, and you have to do some strange stuff to make that happen. Never mind having to write a quick script for UNIX administrator or parsing a text file. Plus, PHP doesn't have CPAN.
+
+Ruby - The language is too new and "script kiddie" for my tastes. The only thing I hear about Ruby is Ruby on Rails. Perl has Catalyst and Dancer (as MVC frameworks), which are damn fine MVCs, but it's not the cornerstone of the language. You're not going to find "Ruby" as a requirement in job offers any time soon (if ever). Plus, Ruby doesn't have CPAN.
+
+Python - In the words of Larry Wall, Python is just snake oil. Python cares about whitespace and the last language I used that cared about whitespace was BASIC. Also, like BASIC, it's was essentially designed to be a easy-to-use beginner's language. Finally, no CPAN here.
+
+Java - Java is a problem child language. The concept was to have this virtual machine that runs on any platform, but because of the huge popularity of the language in college courses, you see Java applications every where that they shouldn't be. For example, in-house server-based web applications shouldn't exist. It's a single server with specs they define and it gets wrapped in a separate VM with a limited memory footprint. Java is bloated, and they don't have CPAN.
+
+C# - I've actually have been using this language quite a bit now, and I've seemed to have formed a love/hate relationship with it. Being able to overload methods with different parameters is cool and fun. But, if you want a language that will bitch at your every line of code about type casting, then C# is for you. My god, it wants you to put explicit casting EVERYWHERE! Making classes are fun, but you suddenly realize that you're spending more time making classes to make the damn language just WORK than actually writing real code.
+
+Also, C# doesn't have...okay, it has .NET, which is really good and extensive. However, I still like CPAN better because you can still write your own modules and complain at the author about a bug or design flaw. And they are all free. Plus, Perl is working towards Perl.NET in the future, so we may be designing Windows applications before long.
+
+Perl is a great language that has:
+
+Regular Expressions - If it's one thing that Perl can do well, it's text manipulation. Yes, many languages have regular expressions, but Perl has damn near invented them, and there's a reason why grep has a "Perl Regular Expression" mode, or why Oracle has a section on "Perl-influenced Extensions in Oracle Regular Expressions". It's built-in and doesn't require any modules.
+
+Flexibility - You have three basic variable types: Scalars, Arrays, and Hashes. That's it. That's all you need. You don't have a int, byte, string, or any of that crap. Perl figures it out just fine. And you can use references all you want without fear of memory leaks or cause the whole PC to crash. The language just works.
+
+Portability - Perl works great on the web. It works great in UNIX. It even works pretty well in Windows. It's not pigeon-holed to a single function. It's a jack-of-all-trades, but also a master of (mostly) everything.
+
+It's easy to do a lot with a little code - Give me a 1K blank file and I can write all kinds of things with that space. Even a Perl one-liner is great to add into a command line pipe.
+
+CPAN - I cannot stress how good it is to find just about anything you need for anything. What is "anything"? Well, how about DB modules for every database or thing you could imagine, ranging from Oracle to iPod to CSV to Adabas to Yaswi? How about several fully featured web servers? How about a Excel file reader, or a SNMP module, or a module that reads comments for debug lines, or modules that help you program faster? A project that I'm doing right now is writing a dynamic Terraria map generator, augmenting from an existing module called Games::RolePlay::MapGen. .NET would never have something like that.
+
+Plus, it's a breeze to install any module via CPAN. Get it from Debian. Install it from CPAN directly. It does as good a job as apt-get in resolving dependencies. I have no problem telling my sysadmin to install X module from CPAN, since it's just a simple one-liner command.
+
+Yes, it has its flaws, and yes, I'm biased towards it, but you've probably already heard the negatives too many times. They don't outweigh the positives, not by a long shot.
