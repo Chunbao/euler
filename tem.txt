@@ -1,2 +1,10 @@
 1-6 OK
 13  going
+http://blog.poxiao.me/p/multi-threading-in-cpp11-part-2-mutex-and-lock/
+http://blog.poxiao.me/p/multi-threading-in-cpp11-part-1-thread-and-future/
+http://blog.poxiao.me/p/multi-threading-in-cpp11-part-3-condition-variable/
+http://en.cppreference.com/w/cpp/thread/lock_guard
+https://zh.wikipedia.org/zh/Condition_variable_(C%2B%2B%E6%A0%87%E5%87%86%E5%BA%93)
+http://blog.csdn.net/liuxuejiang158blog/article/details/17297135
+http://www.uml.org.cn/c++/201403182.asp
+http://blog.csdn.net/zm_jacker/article/details/9787829
