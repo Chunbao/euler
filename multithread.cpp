@@ -10,15 +10,20 @@ condiation_variable
 cv_notify_one/all, cv_wait(lck)
 
 
-实现同步：
+线程同步：
 本章定义了四种可用的同步类型，并且讨论实现同步的注意事项。
-1、互斥锁（mutex）
-2、条件变量(condition variable)
+1、互斥锁（mutex）->synchronize access shared resource
+2、条件变量(condition variable) -> synchronize thread
 3、多读单写锁(multi-read,single-write lock)
-4、信号量(semophore)
+
 5、进程间同步(process synchronization)
 6、同步原语的比较(compare primitive)
 
-1）使用特殊变量实现同步，volatile,寄存器的值重新计算，非原子操作
-2）lock/unlock
-3）
+进程同步：
+Signal
+Pipe
+socket
+Message queeue
+信号量(semophore)
+File
+Shared memory
